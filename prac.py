@@ -1,2 +1,2 @@
-arr = [1,2,3]
-print(arr.pop(max(arr)))
+arr = ["456", "789", "912"]
+print(max(arr))
