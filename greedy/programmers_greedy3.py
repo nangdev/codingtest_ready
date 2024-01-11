@@ -37,11 +37,11 @@ def solution(num,k):
                 ans = max(ans,prob)
             return
         
+        if len(prob) < N-k:
+            dfs(n+1, prob+num[n])
+        
         dfs(n+1,prob)
-        dfs(n+1,prob+num[n])
+        
 
     dfs(0,'')
     return ans
-
-
-print(solution("1924", 2))
