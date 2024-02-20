@@ -1,3 +1,4 @@
-arr = [1,10]
-arr.pop(-1)
-print(arr)
+N =4
+v = [[0]*N for i in range(N)]
+
+print(v)

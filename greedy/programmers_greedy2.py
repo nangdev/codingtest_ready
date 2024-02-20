@@ -45,7 +45,7 @@ def solution(name):
     return ans
 
 
-name = "JAZ"
+name = "BBBAAAAAAAB"
 
 print(solution(name))
 
