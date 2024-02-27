@@ -1,4 +1,3 @@
-N =4
-v = [[0]*N for i in range(N)]
+ans = set("")
 
-print(v)
+print(ans)
