@@ -1,14 +1,23 @@
+from collections import deque
+
 def solution(people, limit):
-    global ans
-    arr = sorted(people)
-    N = len(arr)
-    ans = limit
+    arr = deque(sorted(people))
+    ans = 0
 
-    def dfs(n,cur):
+    while arr:
+        if len(arr) == 1:
+            ans += 1
+            break
 
-        if n == N:
-            ans = min(ans,cur)
-        
-        if people[n] + people[n+1] <= limit:
-            dfs(n+1,cur+1)
+        if arr[0] + arr[-1] <= limit:
+            arr.pop()
+            arr.popleft()
+            ans += 1
+        else:
+            arr.pop()
+            ans += 1
+    
+    return ans
 
+
+print(solution([50,70,80,50], 100))

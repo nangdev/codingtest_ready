@@ -1,4 +1,8 @@
-ans = [1,2,3]
-ans.remove()
+a = 7
+b = 4
 
-print(ans[0])
+a = b if a > b else a
+
+
+
+print(1//2)
