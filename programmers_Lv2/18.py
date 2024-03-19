@@ -1,6 +1,6 @@
 def solution(elements):
     e2 = elements + elements[:-1]
-    temp = []
+    temp = set()
 
     n = len(set(elements))
     N = len(elements)
@@ -9,12 +9,9 @@ def solution(elements):
 
     for i in range(N):
         val = elements[i]
-        for j in range(i+1,i+N):
+        temp.add(val)
+        for j in range(i+1, i+N):
             val += e2[j]
-            temp.append(val)
-    
+            temp.add(val)
 
-    return len(set(temp))+n
-
-
-print(solution([7,9,1,1,4]))
+    return len(temp)

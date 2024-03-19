@@ -1,21 +1,23 @@
 def solution(n, left, right):
-    l, r = 0, 0
+    ans = []
 
-    for i in range(n):
+    lval = left//n
+    rval = right//n
 
-        if n*i <= left < n*i+n:
-            l = i
+    for i in range(lval,rval+1):
 
-        if n*i <= right < n*i+n:
-            r = i
-
-    ltemp = []
-    midtemp = []
-    rtemp = []
-
-    for lval in range(l*n,(l+1)*n):
-        if lval < lval + +l+1:
-            
-
+        for j in range(i+1):
+            ans.append(i+1)
         
+        val = i+1
+        for k in range(n-i-1):
+            val += 1
+            ans.append(val)
 
+    start = left % n
+    offset = right-left
+    
+    return ans[start:start+offset+1]
+
+
+print(solution(4,7,14))
