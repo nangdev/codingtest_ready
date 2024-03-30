@@ -1,5 +1,11 @@
 tep = [1,2,3]
-ans = [4,5,6]
+ans1 = [4,5,6]
+
+ans = []
+
+for i in zip(tep,ans1):
+    ans.append(i)
 
 
-print(tep+ans)
+for k in zip(*ans):
+    print(k)
