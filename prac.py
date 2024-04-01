@@ -1,5 +1,10 @@
-tep = [1,2,3]
-ans = [4,5,6]
+def fibo(n):
+    if n == 1 or n == 2:
+        return 1
+    else:
+        return fibo(n-1) + fibo(n-2)
 
 
-print(tep+ans)
+
+for i in range(1,13):
+    print("*" * fibo(i))
