@@ -1,4 +1,5 @@
-dic = {'d' : ['1','gsd']}
-dic['d'].append('asdf')
+from collections import deque
+ans = [1,2,3]
+a = deque(ans)
 
-print(dic['d'])
+print(a[0])
