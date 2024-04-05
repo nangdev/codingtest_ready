@@ -1,10 +1,5 @@
 from collections import deque
 
-p = deque([1,2,3])
+a = "110011"
 
-a = p.popleft()
-p.append(a)
-
-p.popleft()
-
-print(p)
+print(a.split("0")[1])
