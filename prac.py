@@ -1,5 +1,5 @@
 from collections import deque
 
-a = "110011"
+a = "110012"
 
-print(a.split("0")[1])
+print(format(26, 'X'))
