@@ -1,5 +1,7 @@
 from collections import deque
 
-a = "110012"
+a = {}
+a[(0,0)] = 1
 
-print(format(26, 'X'))
+
+print(a[(0,0)])
