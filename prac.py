@@ -1,7 +1,8 @@
 from collections import deque
 
-a = {}
-a[(0,0)] = 1
+a = 1
+print(a)
 
+a = "hee"
 
-print(a[(0,0)])
+print(type(a) == str)
