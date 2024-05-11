@@ -1,8 +1,8 @@
 from collections import deque
 
-a = 1
-print(a)
+a = [1, 2, 3] * 4
+b = ['a', 'b', 'c']
 
-a = "hee"
 
-print(type(a) == str)
+
+print(int("011"))
