@@ -1,8 +1,8 @@
 from collections import deque
 
-a = [1, 2, 3] * 4
+a = [1, 2, 3]
 b = ['a', 'b', 'c']
 
 
 
-print(int("011"))
+print(a[:0])
