@@ -5,8 +5,7 @@ b = ['a', 'b', 'c']
 
 a = list(zip(*a))
 
-c = "124"
 
 
 
-print(list(map(int,c)))
+print((1.1977+2)*10000)
