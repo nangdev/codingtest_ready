@@ -6,6 +6,6 @@ b = ['a', 'b', 'c']
 a = list(zip(*a))
 
 
+for i in range(len(a)):
+    print(a[i])
 
-
-print((1.1977+2)*10000)

@@ -24,17 +24,10 @@ for t in range(1, int(input())+1):
             for f in fee:
                 chk = False
                 if f[1] == True:
-                    if wait:
-                        w = wait.pop()
-                        f.append(w)
-                        chk = True
-                        f[1] = False
-                        break
-                    else:
-                        f.append(weight[a-1])
-                        chk = True
-                        f[1] = False
-                        break
+                    f.append(weight[a-1])
+                    chk = True
+                    f[1] = False
+                    break
 
             if not chk:
                 wait.append(weight[a-1])
@@ -45,6 +38,11 @@ for t in range(1, int(input())+1):
                     ans += weight[-a-1] * f[0]
                     f[1] = True
                     f.pop()
+
+                    if wait:
+                        f.append(wait.pop(0))
+                        f[1] = False
+                    
                     break
     
     print(f"#{t} {ans}")
