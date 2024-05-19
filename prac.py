@@ -6,6 +6,7 @@ b = ['a', 'b', 'c']
 a = list(zip(*a))
 
 
-for i in range(len(a)):
-    print(a[i])
+c= [1,2,3,4]
+
+print(c.index(2))
 
