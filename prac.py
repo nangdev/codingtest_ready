@@ -6,7 +6,10 @@ b = ['a', 'b', 'c']
 a = list(zip(*a))
 
 
-c= [1,2,3,4]
+s = ['9','5','3','310','39']
 
-print(c.index(2))
+c = '3'
 
+s.sort()
+
+print(s)
